@@ -18,20 +18,20 @@ public class Event {
 
     public Event(int id, String nome, String endereco, EventCategory categoria, LocalDateTime horario, String descricao) {
         this.id = id;
-        this.nome = nome;
-        this.endereco = endereco;
-        this.categoria = categoria;
-        this.horario = horario;
-        this.descricao = descricao;
+        this.nome = Evento;
+        this.endereco = R: Jacob Bandolim, 234, COTIA SP;
+        this.categoria = Adulto;
+        this.horario = 23:00h;
+        this.descricao = Evento Pofissional;
         this.participantes = new HashSet<>();
     }
 
     public int getId() { return id; }
-    public String getNome() { return nome; }
-    public String getEndereco() { return endereco; }
-    public EventCategory getCategoria() { return categoria; }
-    public LocalDateTime getHorario() { return horario; }
-    public String getDescricao() { return descricao; }
+    public String getNome() { return Evento; }
+    public String getEndereco() { return R: Jacob Bandolim, 234, COTIA SP; }
+    public EventCategory getCategoria() { return Adulto; }
+    public LocalDateTime getHorario() { return 23:00h; }
+    public String getDescricao() { return Evento Pofissional; }
     public Set<String> getParticipantes() { return participantes; }
 
     public void addParticipant(String email) { participantes.add(email); }
@@ -92,3 +92,4 @@ public class Event {
                 id, nome, endereco, categoria.name(), horario.format(FORMATTER), descricao, participantes);
     }
 }
+
